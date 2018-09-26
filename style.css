@@ -1,0 +1,629 @@
+/*
+Theme Name: UnderStrap
+*/
+
+/* Trail-Inn Template Sept 24
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* GENERAL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+:root {
+	--blackolive: #423E37;
+	--gold: #E3B23C;
+	--eggshell: #EDEBD7;
+	--spanishgrey: #A39594;
+	--granite: #6E675F;
+	--lightgrey: #f2f2f2;
+
+	--paddmobile: 15px;
+	--fontmobile: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	background-color: var(--spanishgrey);
+	color: #fff;
+	font-family: Rubik, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	font-weight: 300;
+	text-align: center;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+body,
+html,
+h1, h2, h3, h4, h5, h6,
+a,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a, p {
+	line-height: 25px;
+}
+
+
+/* NAVBAR
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.navbar {
+	background-color: var(--blackolive);
+	width: 100%;
+}
+
+
+/* NAVBAR--MOBILE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.navbar--mobile {
+	align-items: center;
+	display: flex;
+	height: 65px;
+	justify-content: space-between;
+}
+
+.navbar__logo {
+	width: 40%;
+}
+
+.navbar__phone, .navbar__burger-menu {
+	width: 30%;
+}
+
+/* ALL THREE ARE FLEXBOXES TO CENTER EVERYTHING
+VERTICALLY AND HORIZONTALLY */
+.navbar__logo,
+.navbar__phone,
+.navbar__burger-menu {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	padding: 10px;
+}
+
+.navbar__burger-menu {
+	flex-flow: column nowrap;
+}
+
+.navbar__logo {
+	justify-content: flex-start;
+	height: 100%;
+	width: 100%;
+}
+
+.navbar__logo img {
+	height: 100%;
+	width: 100px;
+}
+
+/* BURGER MENU */
+.burger-stripe {
+	background-color: #fff;
+	height: 4px;
+	margin: 3px auto;
+	width: 38px;
+}
+
+/* PHONE ICON */
+.navbar__phone {
+	background-color: var(--gold);
+}
+
+.navbar__phone i {
+	color: #000;
+	font-size: 25px;
+}
+
+/* CONTENT OF FULL-WIDTH & -HEIGHT BURGER MENU */
+.navbar--burger {
+	background-color: #fff;
+}
+
+.burger__container {
+	background-color: #fff;
+	bottom: 0;
+	display: none;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	width: 100%;
+}
+
+.burger__content {
+	background-color: #fff;
+	background-image: url("https://i.imgur.com/V940I5u.pngg");
+	background-repeat: repeat;
+	background-size: cover;
+	display: flex;
+	flex-flow: column nowrap;
+	height: auto;
+	padding: var(--paddmobile);
+	width: 100%;
+}
+
+.burger__content a {
+	display: block;
+	font-size: 23px;
+	margin-top: 7px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+/* THE CLOSING X IN THE MOBILE NAVBAR */
+.burger__close {
+	background-image: url("http://fagcode.com/wp-content/uploads/2018/09/close.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 25px;
+	width: 25px;
+}
+
+.navbar__phone--burger {
+	background-color: transparent;
+}
+
+/* SOCIAL MEDIA ICONS */
+.social-media {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.social-item {
+	align-items: center;
+	background-color: var(--granite);
+	display: flex;
+	height: 100px;
+	justify-content: center;
+	margin: 5px;
+	width: 45%;
+}
+
+.social-item a {
+	padding: 25px 50px;
+}
+
+.social-item a i {
+	color: var(--eggshell);
+	font-size: 35px;
+}
+
+
+/* MAIN
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* HERO IMAGE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.hero {
+	width: 100%;
+}
+
+.hero img {
+	height: 100%;
+	width: 100%;
+}
+
+
+/* HOTEL DESCRIPTION
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.hotel__description {
+	background-color: var(--blackolive);
+	margin-top: -4px;
+	padding: var(--paddmobile);
+	padding-top: 50px;
+}
+
+.hotel__title {
+	text-align: center;
+	padding: 0 var(--paddmobile) var(--paddmobile) var(--paddmobile);
+}
+
+.hotel__text {
+	text-align: center;
+}
+
+
+/* BOOKING BUTTON
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.booking-button {
+	background-color: var(--blackolive);
+	padding: var(--paddmobile);
+	padding-bottom: 50px;
+}
+
+.booking-button button {
+	background-color: var(--gold);
+	border: none;
+	color: #000;
+	font-size: 20px;
+	padding: var(--paddmobile);
+	width: 100%;
+}
+
+
+/* PROMOTION AREA
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.promo {
+	background-color: var(--spanishgrey);
+}
+
+.promo__strip {
+	align-items: center;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	padding: 50px var(--paddmobile) 0 var(--paddmobile);
+}
+
+/* Strip items */
+.strip-item {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	padding: var(--paddmobile);
+	text-align: center;
+	width: 33.333%;
+}
+.strip-item-1 {
+	background-color: var(--blackolive);
+	color: #fff;
+}
+.strip-item-2 {
+	background-color: var(--granite);
+	color: #fff;
+}
+.strip-item-3 {
+	background-color: var(--gold);
+	color: #000;
+}
+
+/* Promo area */
+.promo__area {
+	margin: 0 var(--paddmobile) 50px var(--paddmobile);
+}
+.promo-area-1 {
+	background-color: var(--blackolive);
+	color: #fff;
+}
+.promo-area-2 {
+	background-color: var(--granite);
+	color: #fff;
+	display: none;
+}
+.promo-area-3 {
+	background-color: var(--gold);
+	color: #000;
+	display: none;
+}
+
+.promo__title {
+	padding: var(--paddmobile);
+	padding-bottom: 0;
+}
+
+.promo__description {
+	padding: var(--paddmobile);
+	text-align: center;
+}
+
+.promo__attachment {
+	padding: var(--paddmobile);
+}
+
+.promo-area-1 .promo__attachment {
+	background-color: var(--eggshell);
+	color: #000;
+}
+.promo-area-1 .promo__button {
+	background-color: var(--blackolive);
+	color: var(--eggshell);
+}
+.promo-area-2 .promo__attachment {
+	background-color: var(--eggshell);
+	color: #000;
+}
+.promo-area-2 .promo__button {
+	background-color: var(--granite);
+	color: var(--eggshell);
+}
+.promo-area-3 .promo__attachment {
+	background-color: var(--eggshell);
+}
+.promo-area-3 .promo__button {
+	background-color: var(--gold);
+}
+
+.promo__price {
+	text-align: center;
+}
+
+.promo__price i {
+	color: #85bb65;
+}
+
+.promo__button {
+	background-color: #fff;
+	border-radius: 20px;
+	display: block;
+	margin: 20px auto 0 auto;
+	padding: 10px;
+	text-align: center;
+	width: 150px;
+}
+
+
+/* ABOUT SECTION
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.about__image {
+	background-color: var(--blackolive);
+	height: 100%;
+	width: 100%;
+}
+
+.about__text {
+	background-color: var(--blackolive);
+	margin-top: -4px;
+	padding: 50px var(--paddmobile);
+}
+
+.about__description {
+	text-align: center;
+}
+
+.about__description:last-child {
+	padding-top: var(--paddmobile);
+}
+
+
+/* BOOKING SECTION
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.booking {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 50px var(--paddmobile);
+}
+
+.booking__title {
+	color: #fff;
+	padding: var(--paddmobile);
+	padding-top: 0;
+}
+
+.top-row,
+.bottom-row {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.input-container {
+	align-items: center;
+	background-color: var(--blackolive);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	margin: 1px;
+	width: 50%;
+}
+
+.input-container .fas {
+	color: #fff;
+	font-size: 18px;
+	padding: 10px;
+}
+
+.input-container input,
+.input-container select {
+	-webkit-appearance: none;
+	background-color: var(--blackolive);
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px;
+	width: 100%;
+}
+
+.input-container select option {
+	color: #fff;
+}
+
+.input-container input::placeholder {
+    color: #fff;
+}
+.input-container input:-ms-input-placeholder {
+    color: #fff;
+}
+.input-container input::-ms-input-placeholder {
+    color: #fff;
+}
+
+
+.booking__form input[type="submit"] {
+	-webkit-appearance: none;
+	background-color: var(--gold);
+	border-radius: 0;
+	color: var(--blackolive);
+	height: 100%;
+}
+
+
+/* CONTACT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.contact {
+	background-color: #fff;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+}
+
+.contact__map,
+.contact__address {
+	width: 100%;
+}
+
+.contact__map iframe {
+	width: 100%;
+}
+
+.contact__address address {
+	background-color: var(--blackolive);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	padding: 50px var(--paddmobile);
+}
+
+.contact__icon {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-right: 10px;
+}
+
+.contact__icon i {
+	font-size: 40px;
+}
+
+
+/* AMENITIES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.amenities {
+	display: flex;
+	justify-content: center;
+	padding: 50px var(--paddmobile);
+	width: 100%;
+}
+
+.amenities__item img {
+	height: 60px;
+	width: 60px;
+}
+
+
+/* FOOTER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.footer {
+	background-color: var(--blackolive);
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	padding: var(--paddmobile);
+}
+
+/* LOGO */
+.footer__logo a img {
+    display: block;
+    height: 100%;
+	margin: 25px auto;
+    width: 50%;
+}
+
+.footer__logo p {
+	text-align: center;
+}
+
+.footer__social {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	margin: 50px 0;
+}
+
+.footer__social-item a i {
+	color: var(--gold);
+	font-size: 40px;
+}
+
+/* NEWSLETTER */
+.footer__newsletter h2,
+.footer__contact h2,
+.footer__sitemap h2 {
+	padding-bottom: var(--paddmobile);
+}
+
+.footer__newsletter {
+	padding-bottom: 50px;
+}
+
+.footer__newsletter p {
+	text-align: center;
+}
+
+/* LOGO */
+.footer__form input {
+	-webkit-appearance: none;
+    background-color: var(--spanishgrey);
+    border: none;
+    border-radius: 0;
+    display: block;
+    height: 40px;
+    margin: 10px auto;
+    text-align: center;
+    width: 230px;
+}
+
+.footer__form input::placeholder {
+    color: #000;
+}
+.footer__form input:-ms-input-placeholder {
+    color: #000;
+}
+.footer__form input::-ms-input-placeholder {
+    color: #000;
+}
+
+.footer__form input[type="submit"] {
+	border-radius: 20px;
+	background-color: var(--blackolive);
+	border: 2px solid var(--spanishgrey);
+	color: var(--spanishgrey);
+}
+
+/* CONTACT */
+.footer__contact {
+	padding-bottom: 50px;
+}
+
+.footer__contact a {
+	color: var(--gold);
+	display: block;
+	margin: 5px 0;
+	text-align: center;
+}
+
+/* Sitemap */
+.footer__sitemap {
+	text-align: center;
+}
+
+.footer__sitemap a {
+	color: var(--spanishgrey);
+}
+
+.footer__sitemap span {
+	color: var(--spanishgrey);
+}

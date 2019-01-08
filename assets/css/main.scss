@@ -5,6 +5,11 @@
 $underline-color: rgba(255, 121, 121, 0.7);
 $accent-color: rgb(255, 190, 118);
 $text-color: #2c3e50;
+$pale-yellow: #ffeaa7;
+
+* {
+    box-sizing: border-box;
+}
 
 p, a, span, div {
     color: $text-color;
@@ -55,7 +60,7 @@ a {
         z-index: 0;
 
         &:after {
-            background-color: #ffeaa7;
+            background-color: $pale-yellow;
             height: 8px;
             content: '';
             position: absolute;
@@ -66,14 +71,26 @@ a {
         }
     }
 
+    &__activate-dropdown {
+        padding: 18px 60px;
+    }
+
     &__link-item {
+        font-weight: 900;
         display: block;
+        padding: 20px 40px;
+
+        &:hover {
+            background-color: $pale-yellow;
+        }
     }
 
     &__dropdown {
+        background-color: $accent-color;
+        box-shadow: 0px 15px 10px -15px #aaa;
         display: none;
-        padding: 20px;
-        opacity: 1;
+        position: absolute;
+        width: 100%;
     }
 }
 

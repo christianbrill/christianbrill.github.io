@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 p, a, span, div {
   color: #2c3e50;
   font-family: 'Muli', sans-serif;
@@ -68,14 +73,27 @@ a {
   left: 0;
 }
 
+.navbar__activate-dropdown {
+  padding: 18px 60px;
+}
+
 .navbar__link-item {
+  font-weight: 900;
   display: block;
+  padding: 20px 40px;
+}
+
+.navbar__link-item:hover {
+  background-color: #ffeaa7;
 }
 
 .navbar__dropdown {
+  background-color: #ffbe76;
+  -webkit-box-shadow: 0px 15px 10px -15px #aaa;
+          box-shadow: 0px 15px 10px -15px #aaa;
   display: none;
-  padding: 20px;
-  opacity: 1;
+  position: absolute;
+  width: 100%;
 }
 
 .main {

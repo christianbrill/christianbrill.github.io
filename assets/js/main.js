@@ -5,4 +5,10 @@ $(document).ready(function() {
 		$(".navbar__dropdown").slideToggle();
 	});
 
+	$('[data-fancybox]').fancybox({
+		buttons: [
+	    "close"
+	  ]
+});
+
 });

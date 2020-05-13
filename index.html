@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Christian Brill</title>
+    <title>Christian Brill Photography</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Christian Brill portfolio" content="This page is the portfolio of Christian Brill. You can learn more about him and get in touch with him here.">
+    <meta name="Christian Brill Photography" content="This page is the portfolio of Christian Brill. You can learn more about him and get in touch with him here.">
 
     <!-- Canonical content -->
     <link rel="canonical" href="http://christianbrill.github.io">
@@ -14,8 +14,11 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto|Space+Mono|Londrina+Solid|Barlow|East+Sea+Dokdo" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/kurisureset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+
 </head>
 <body>
 
@@ -25,32 +28,55 @@
             <div class="navbar__logo"></div>
 
             <div class="navbar__links">
-                <a href="" class="navbar__activate-dropdown"><i class="fas fa-angle-down"></i></a>
+                <a href="" class="navbar__activate-dropdown">menu</a>
             </div>
         </div>
 
         <div class="navbar__dropdown">
-            <a href="#about" class="navbar__link-item">WHO AM I?</a>
-            <a href="#code" class="navbar__link-item">I CODE</a>
-            <a href="#teach" class="navbar__link-item">I TEACH</a>
-            <a href="#workwithme" class="navbar__link-item">WORK WITH ME</a>
+            <a href="" class="navbar__link-item">NATURE</a>
+            <a href="" class="navbar__link-item">GRAYSCALE</a>
+            <a href="" class="navbar__link-item">PEOPLE</a>
+            <a href="" class="navbar__link-item">ABSTRACT</a>
+            <a href="" class="navbar__link-item">KURISU NO PHOTO?</a>
+            <div class="navbar__social-media">
+                <a href="" class="navbar__link-item">INSTA</a>
+                <a href="" class="navbar__link-item">500PX</a>
+            </div>
         </div>
     </nav>
 </header>
 
 <main class="main">
-    <div id="about">This is who I am</div>
-    <div id="code">This is what I code</div>
-    <div id="teach">This is what I teach</div>
-    <div id="workwithme">This is why you want to work with me</div>
+
+  <div class="gallery_row">
+      <div class="gallery_column">
+          <a href="assets/img/001.jpg" data-fancybox data-caption="Took this in a wild craze"><img src="assets/img/001.jpg" alt=""></a>
+          <a href="assets/img/002.jpg" data-fancybox><img src="assets/img/002.jpg" alt=""></a>
+          <a href="assets/img/003.jpg" data-fancybox><img src="assets/img/003.jpg" alt=""></a>
+      </div>
+
+      <div class="gallery_column">
+          <a href="assets/img/004.jpg" data-fancybox><img src="assets/img/004.jpg" alt=""></a>
+          <a href="assets/img/005.jpg" data-fancybox><img src="assets/img/005.jpg" alt=""></a>
+          <a href="assets/img/006.jpg" data-fancybox><img src="assets/img/006.jpg" alt=""></a>
+      </div>
+
+      <div class="gallery_column">
+        <a href="assets/img/007.jpg" data-fancybox><img src="assets/img/007.jpg" alt=""></a>
+        <a href="assets/img/008.jpg" data-fancybox><img src="assets/img/008.jpg" alt=""></a>
+      </div>
+  </div>
+
 </main>
 
 <footer>
-    &copy; <span><script>var theDate = new Date(); document.write(theDate.getFullYear());</script></span>
+    <p>Christian Brill &copy; 2018 - <span><script>var theDate = new Date(); document.write(theDate.getFullYear());</script></span></p>
 </footer>
 
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/jquery.fancybox.min.js"></script>
 <script src="assets/js/main.js"></script>
+
 </body>
 </html>

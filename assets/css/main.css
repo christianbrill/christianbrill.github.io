@@ -22,7 +22,7 @@ a {
 
 .navbar {
   -webkit-box-shadow: 0 0 5px 0 #ccc;
-          box-shadow: 0 0 5px 0 #ccc;
+  box-shadow: 0 0 5px 0 #ccc;
   height: 60px;
   width: 100%;
 }
@@ -33,19 +33,13 @@ a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-}
-
-.navbar__logo {
-  background-image: url("../img/logo.png");
-  background-size: cover;
-  width: 160px;
 }
 
 .navbar__links {
